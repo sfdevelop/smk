@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap Reboot v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -7689,6 +7690,263 @@ mark,
     display: none;
 }
 
+/* Slider */
+.slick-loading .slick-list {
+    background: #fff url("./ajax-loader.gif") center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+    font-family: "slick";
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 20px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent;
+}
+
+.slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+    opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 1;
+}
+
+.slick-prev:before,
+  .slick-next:before {
+    font-family: "slick";
+    font-size: 20px;
+    line-height: 1;
+    color: #333;
+    opacity: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+    left: -25px;
+}
+
+[dir="rtl"] .slick-prev {
+    left: auto;
+    right: -25px;
+}
+
+.slick-prev:before {
+    content: "←";
+}
+
+[dir="rtl"] .slick-prev:before {
+    content: "→";
+}
+
+.slick-next {
+    right: -25px;
+}
+
+[dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto;
+}
+
+.slick-next:before {
+    content: "→";
+}
+
+[dir="rtl"] .slick-next:before {
+    content: "←";
+}
+
+/* Dots */
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -55px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    border: 0;
+    background: transparent;
+    display: block;
+    height: 10px;
+    width: 10px;
+    outline: none;
+    line-height: 0px;
+    font-size: 0px;
+    color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.slick-dots li button:hover, .slick-dots li button:focus {
+    outline: none;
+    background: #FF9500;
+    border-radius: 50%;
+}
+
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+    opacity: 1;
+    border: 2px solid #FF9500;
+}
+
+.slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "•";
+    width: 10px;
+    height: 10px;
+    font-family: "slick";
+    font-size: 60px;
+    line-height: 20px;
+    text-align: center;
+    color: transparent;
+    opacity: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: 2px solid #FF9500;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active button:before {
+    color: transparent;
+    opacity: 1;
+}
+
+@font-face {
+    font-family: 'icomoon';
+  src: url("../fonts/fonts/icomoon.eot?kgwf03");
+  src: url("../fonts/fonts/icomoon.eot?kgwf03#iefix") format("embedded-opentype"), url("../fonts/fonts/icomoon.ttf?kgwf03") format("truetype"), url("../fonts/fonts/icomoon.woff?kgwf03") format("woff"), url("../fonts/fonts/icomoon.svg?kgwf03#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrowl .path1:before {
+    content: "\e900";
+    color: white;
+}
+
+.icon-arrowl .path2:before {
+    content: "\e901";
+    margin-left: -1em;
+    color: none;
+}
+
+.icon-arrowl .path3:before {
+    content: "\e902";
+    margin-left: -1em;
+    color: #cccccc;
+}
+
+.icon-arrowr .path1:before {
+    content: "\e903";
+    color: white;
+}
+
+.icon-arrowr .path2:before {
+    content: "\e905";
+    margin-left: -1em;
+    color: none;
+}
+
+.icon-arrowr .path3:before {
+    content: "\e906";
+    margin-left: -1em;
+    color: #ff9500;
+}
+
+.icon-mail:before {
+    content: "\e907";
+    color: #ff9500;
+}
+
+.icon-pin:before {
+    content: "\e908";
+    color: #ff9500;
+}
+
+.icon--5:before {
+    content: "\e909";
+    color: #ff9500;
+}
+
+.icon--17:before {
+    content: "\e90a";
+    color: #fff;
+}
+
+.icon-instagram:before {
+    content: "\e904";
+    color: #fff;
+}
+
 @font-face {
     font-family: "Ticker Tape";
   src: url("../fonts/tickertape.ttf");
@@ -7869,6 +8127,10 @@ nav li:hover > .submenu {
     position: absolute;
 }
 
+.btn {
+    display: inline-table;
+}
+
 .btn:hover {
     background: transparent;
     border: 1px solid #FF9500;
@@ -7943,7 +8205,7 @@ header .p-absolute {
 }
 
 .main_slider .slider__box {
-    border: 1px solid #FF9500;
+    border: 1px solid #adb5bd;
     background: #fff;
 }
 
@@ -7956,4 +8218,49 @@ header .p-absolute {
 .main_slider .slider__box .p-bottom,
     .main_slider .slider__box h3 {
     margin: auto 0 0 0;
+}
+
+.main_slider .slider__box:hover {
+    border: 1px solid #FF9500;
+}
+
+.main-service .service {
+    border: 1px solid #FF9500;
+}
+
+.main-service h2 {
+    font-size: calc(1.1vw + .8rem);
+    line-height: calc(1.1vw + 1.2rem);
+}
+
+.main-contact i {
+    font-size: 50px;
+}
+
+.main-contact ul {
+    list-style-type: none;
+}
+
+.main-contact ul a {
+    color: #000;
+    font-size: 18px;
+}
+
+.main-contact .benefits__box {
+    border: none;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 30%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }

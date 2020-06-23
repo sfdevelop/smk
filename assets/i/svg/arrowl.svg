@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="arrowl" transform="translate(-62 -2811)">
+    <g id="Эллипс_1" data-name="Эллипс 1" transform="translate(62 2811)" fill="#fff" stroke="#ccc" stroke-width="1">
+      <circle cx="20" cy="20" r="20" stroke="none"/>
+      <circle cx="20" cy="20" r="19.5" fill="none"/>
+    </g>
+    <g id="_271226" data-name="271226" transform="translate(72 2822.302)">
+      <g id="Сгруппировать_11" data-name="Сгруппировать 11" transform="translate(0 0)">
+        <path id="Контур_1" data-name="Контур 1" d="M.321,48.92l7.253-7.253a1.1,1.1,0,0,1,1.555,0l.659.659a1.091,1.091,0,0,1,.321.777,1.113,1.113,0,0,1-.321.786L5.556,48.13H19a1.073,1.073,0,0,1,1.085,1.081v.931A1.114,1.114,0,0,1,19,51.271H5.508l4.279,4.264a1.089,1.089,0,0,1,0,1.544l-.659.657a1.1,1.1,0,0,1-1.555,0L.321,50.48a1.109,1.109,0,0,1,0-1.56Z" transform="translate(0 -41.346)" fill="#ccc"/>
+      </g>
+    </g>
+  </g>
+</svg>
