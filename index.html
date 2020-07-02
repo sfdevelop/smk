@@ -16,7 +16,6 @@
 
 	<link rel="stylesheet" href="assets/css/style.min.css">
 
-
 	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content="" />
 	<meta property="og:image" content="" />
@@ -33,7 +32,7 @@
 </head>
 
 <body>
-	<div class="menu py-3" id="menu">
+	<div class="menu py-3 d-none d-lg-block" id="menu">
 		<div class="container">
 			<nav class="d-flex align-items-center justify-content-between">
 				<div class="logo">
@@ -64,6 +63,77 @@
 			</nav>
 		</div>
 	</div>
+	<div class="overlay pt-5">
+	
+		<nav class="overlayMenu d-flex flex-column justify-content-between h90">
+			<div>
+				<div class="d-block mobile_menu">
+					<ul class="ml-4 ul-menu">
+						<li class="mobile_li py-3">
+							<a href="index.html">Головна</a>
+						</li>
+						<!--
+						<li class="mobile_li">
+							level 2
+							<ul>
+								<li class="mobile_li">a</li>
+								<li class="mobile_li">b</li>
+							</ul>
+						</li>
+	-->
+						<li class="mobile_li py-3">
+							Продукція
+							<span class="icon-arrowr">
+								<span class="path3"></span>
+							</span>
+							<ul class="p-0">
+								<li class="mobile_li py-3">
+									Мінеральні добрива
+									<span class="icon-arrowr">
+										<span class="path3"></span>
+									</span>
+									<ul>
+										<li class="mobile_li"><a href="">акарициди</a></li>
+										<li class="mobile_li"><a href="">інсектициди</a></li>
+										<li class="mobile_li"><a href="">фунгіциди</a></li>
+										<li class="mobile_li"><a href="">прилипачі</a></li>
+										<li class="mobile_li"><a href="">регулятори та стимулятори росту</a></li>
+									</ul>
+								</li>
+	
+								<li class="mobile_li py-3">Засоби захисту рослин</li>
+							</ul>
+						</li>
+	
+						<li class="mobile_li py-3">
+							Послуги
+							<span class="icon-arrowr">
+								<span class="path3"></span>
+							</span>
+							<ul class="p-0">
+								<li class="mobile_li py-3">Транспортування безводного аміаку </li>
+								<li class="mobile_li py-3">Внесення в ґрунт безводного аміаку </li>
+							</ul>
+						</li>
+						<li class="mobile_li py-3">
+							<a href="">Про нас</a>
+						</li>
+						<li class="mobile_li py-3">
+							<a href="">Контакти </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	
+	</div>
+	<div class="p-relative">
+		<div class="logo-menu d-lg-none">
+			<img class="b-lazy" src="assets/i/loading.gif" data-src="assets/i/logo.png" alt="logo">
+		</div>
+		<div class="d-lg-none phone-mobile"><i class="icon--5"></i></div>
+		<div class="navBurger d-lg-none" role="navigation" id="navToggle"></div>
+	</div>
 	<header>
 		<div class="p-absolute d-flex flex-column justify-content-center align-items-center">
 			<h1 class="display-1">SMK </h1>
@@ -73,11 +143,11 @@
 	</header>
 	<div class="main-about mb-lg-5 d-block pb-lg-5">
 		<div class="container">
-			<div class="d-flex">
-				<div class="col-lg-6">
+			<div class="d-lg-flex d-block">
+				<div class="col-12 col-lg-6">
 					<img class="b-lazy w-100" src="assets/i/loading.gif" data-src="assets/i/m-01.png" alt="Про нас">
 				</div>
-				<div class="col-lg-6 d-flex flex-column justify-content-center ">
+				<div class="col-12 col-lg-6 d-flex flex-column justify-content-center ">
 					<h2 class="mb-4">Про Компанію</h2>
 					<div class="text">
 						<p>ТОВ «СМК ГРУП» було засновано в 1992 році і працює на ринку рідких аміачних добрив 20 років.</p>
@@ -89,12 +159,12 @@
 			</div>
 		</div>
 	</div>
-	 <div class="benefits my-lg-5 d-block py-lg-5">
+	 <div class="benefits my-5 d-block py-lg-5">
 	 	<div class="container">
 	 		<h2 class="text-center pb-4">Переваги роботи з нами</h2>
 	 		<p class="text-center">З нами легко працювати адже наша компанія на ринку рідких <br> аміачних добрив досить давно</p>
-	 		<div class="d-flex mt-80">
-	 			<div class="col-lg-4 d-flex">
+	 		<div class="d-block d-lg-flex mt-80">
+	 			<div class="col-12 col-lg-4 d-flex">
 	 				<div class="benefits__box p-4 d-flex flex-column">
 	 					<img class="b-lazy p-absolute" src="assets/i/loading.gif" data-src="assets/i/b-01.png" alt="Розвиток АПК">
 	 					<h3 class="pb-4 mt-4">Розвиток АПК</h3>
@@ -102,7 +172,7 @@
 	 				</div>
 	
 	 			</div>
-	 			<div class="col-lg-4 d-flex">
+	 			<div class="col-12 col-lg-4 d-flex">
 	 				<div class="benefits__box p-4 d-flex flex-column">
 	 					<img class="b-lazy p-absolute ml-4" src="assets/i/loading.gif" data-src="assets/i/b-02.png" alt="Найкраща техніка">
 	 					<h3 class="pb-4 mt-4">Найкраща техніка</h3>
@@ -110,7 +180,7 @@
 	 				</div>
 	
 	 			</div>
-	 			<div class="col-lg-4 d-flex">
+	 			<div class="col-12 col-lg-4 d-flex">
 	 				<div class="benefits__box p-4 d-flex flex-column">
 	 					<img class="b-lazy p-absolute" src="assets/i/loading.gif" data-src="assets/i/b-03.png" alt="Найкраща техніка">
 	 					<h3 class="pb-4 mt-4">Близьке розташування заводів</h3>
@@ -118,8 +188,8 @@
 	 				</div>
 	 			</div>
 	 		</div>
-	 		<div class="d-flex mt-80">
-	 			<div class="col-lg-4 d-flex">
+	 		<div class="d-block d-lg-flex mt-80">
+	 			<div class="col-12 col-lg-4 d-flex">
 	 				<div class="benefits__box p-4 d-flex flex-column">
 	 					<img class="b-lazy p-absolute ml-4" src="assets/i/loading.gif" data-src="assets/i/b-04.png" alt="Розвиток АПК">
 	 					<h3 class="pb-4 mt-4">Власний автопарк</h3>
@@ -127,7 +197,7 @@
 	 				</div>
 	
 	 			</div>
-	 			<div class="col-lg-4 d-flex">
+	 			<div class="col-12 col-lg-4 d-flex">
 	 				<div class="benefits__box p-4 d-flex flex-column">
 	 					<img class="b-lazy p-absolute ml-4" src="assets/i/loading.gif" data-src="assets/i/b-05.png" alt="Власне обладнання та трактори">
 	 					<h3 class="pb-4 mt-4">Власне обладнання та трактори</h3>
@@ -135,7 +205,7 @@
 	 				</div>
 	
 	 			</div>
-	 			<div class="col-lg-4 d-flex">
+	 			<div class="col-12 col-lg-4 d-flex">
 	 				<div class="benefits__box p-4 d-flex flex-column">
 	 					<img class="b-lazy p-absolute" src="assets/i/loading.gif" data-src="assets/i/b-06.png" alt="Найкраща техніка">
 	 					<h3 class="pb-4 mt-4">Кваліфіковані працівники</h3>
@@ -145,7 +215,7 @@
 	 		</div>
 	 	</div>
 	 </div>
-	<div class="main_slider my-lg-5">
+	<div class="main_slider my-5">
 		<div class="container">
 			<h2 class="mb-4 text-center">Наша продукція</h2>
 			<p class="text-center">Ми реалізуємо високоякісну продукцію тільки від провірених <br> товоровиробників</p>
@@ -212,12 +282,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="main-service mb-lg-5 d-block pb-lg-5">
+	<div class="main-service mb-5 d-block pb-lg-5">
 		<div class="container">
-			<h2 class="mb-4 text-center">Наші послуги</h2>
+			<h2 class="mb-4 text-center h2-main">Наші послуги</h2>
 			<p class="text-center">Ми знаємо як правильно транспортувати аміак та як ним <br> користуватися</p>
-			<div class="d-flex mt-5">
-				<div class="col-lg-6 d-flex">
+			<div class="d-block d-lg-flex mt-5">
+				<div class="col-12 col-lg-6 d-flex mb-3">
 					<div class="benefits__box d-flex">
 						<div class="col-6 p-4 justify-content-center d-flex flex-column">
 							<h2>Транспортування безводного аміаку </h2>
@@ -229,7 +299,7 @@
 					</div>
 	
 				</div>
-				<div class="col-lg-6 d-flex">
+				<div class="col-12 col-lg-6 d-flex mb-3">
 					<div class="benefits__box d-flex">
 						<div class="col-6 p-4 justify-content-center d-flex flex-column">
 							<h2>Внесення в ґрунт безводного аміаку </h2>
@@ -244,12 +314,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="main-contact mb-lg-5 d-block pb-lg-5">
+	<div class="main-contact mb-5 d-block pb-5">
 		<div class="container">
 			<h2 class="mb-4 text-center">Наші контакти</h2>
 			<p class="text-center">Багато питань на які не знаєте відповідь. Напишіть нам і ми <br> з радістю на них відповімо</p>
-			<div class="d-flex mt-5">
-				<div class="col-lg-4 d-flex">
+			<div class="d-lg-flex d-block mt-5">
+				<div class="col-12 col-lg-4 d-flex">
 					<div class="benefits__box d-flex p-4 align-items-center">
 						<div class="col-3">
 							<i class="icon--5"></i>
@@ -262,7 +332,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 d-flex">
+				<div class="col-12 col-lg-4 d-flex">
 					<div class="benefits__box d-flex p-4 align-items-center">
 						<div class="col-3">
 							<i class="icon-pin"></i>
@@ -274,7 +344,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 d-flex">
+				<div class="col-12 col-lg-4 d-flex">
 					<div class="benefits__box d-flex p-4 align-items-center">
 						<div class="col-3">
 							<i class="icon-mail"></i>
@@ -290,11 +360,67 @@
 		</div>
 	</div>
 	<div class="main-map d-block">
+		<form action="">
+			<div class="box_feedbeack p-absolute p-4 m-5 text-center">
+				<h4 class="mb-3">Маєте питання? <yellow> Напишіть</yellow> нам і ми з радістю на них відповімо</h4>
+				<div class="form-group">
+					<input type="text" class="form-control" id="uname" placeholder="Ваше ім'я" name="uname" required>
+					<div class="valid-feedback">Valid.</div>
+					<div class="invalid-feedback">Please fill out this field.</div>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="pwd" placeholder="Ваш email" name="pswd" required>
+					<div class="valid-feedback">Valid.</div>
+					<div class="invalid-feedback">Please fill out this field.</div>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="pwd" placeholder="Ваше повідомлення" name="pswd" required>
+					<div class="valid-feedback">Valid.</div>
+					<div class="invalid-feedback">Please fill out this field.</div>
+				</div>
+				<p>Натиснувши кнопку Ви погоджуєтеся на обробку персональних даних</p>
+				<div class="w100"></div>
+				<a href="" class="btn btn-lg">Написати нам</a>
+			</div>
+		</form>
 		<div class="map-responsive">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d917.204085106872!2d32.05836896026669!3d49.442087910140586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1592934987278!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 		</div>
 	</div>
-
+	<footer class="py-5">
+		<div class="container">
+			<div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-center">
+				<div class="logo">
+					<img class="b-lazy" src="assets/i/loading.gif" data-src="assets/i/logo.png" alt="logo">
+				</div>
+				<div class="link">
+					<ul class="m-0 d-flex">
+						<li class="mx-4"><a href="">Головна</a></li>
+						<li class="mx-4"><a href="">Про нас</a></li>
+						<li class="mx-4"><a href="">Контакти </a></li>
+					</ul>
+				</div>
+				<div>
+					<a href="" class="btn">Замовити дзвінок</a>
+				</div>
+			</div>
+			<div class="copirate">
+				<div class="d-lg-flex d-block justify-content-between align-items-center pt-4 mt-4 lt-1 text-c">
+					<div>
+						SMK agro group © 2020. Разроблено компанією <a href="http://sfdevelop.com" target="_blank">SFdevelop</a>
+					</div>
+					<div class="social">
+						<a class="mx-1" href="" target="_blank">
+							<i class="icon-instagram"></i>
+						</a>
+						<a class="mx-1" href="" target="_blank">
+							<i class="icon--17"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<!--JS-->
 	<script src="assets/js/main.min.js"></script>
