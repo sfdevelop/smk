@@ -36,29 +36,37 @@
 		<div class="container">
 			<nav class="d-flex align-items-center justify-content-between">
 				<div class="logo">
-					<img class="b-lazy" src="assets/i/loading.gif" data-src="assets/i/logo.png" alt="logo">
+					<a href="index.html">
+						<img class="b-lazy" src="assets/i/loading.gif" data-src="assets/i/logo.png" alt="logo">
+					</a>
 				</div>
 				<ul class="topmenu">
-					<li><a href="">Головна</a></li>
+					<li><a href="index.php">Головна</a></li>
 					<li><a href="" class="active">Продукція<span class="fa fa-angle-down"></span></a>
 						<ul class="submenu">
-							<li><a href="">меню второго уровня</a></li>
-							<li><a href="">меню второго уровня<span class="fa fa-angle-down"></span></a>
+							<li><a href="product.html">Мінеральні добрива</a></li>
+							<li><a href="product.html">Засоби захисту рослин<span class="fa fa-angle-down"></span></a>
 								<ul class="submenu">
-									<li><a href="">меню третьего уровня</a></li>
-									<li><a href="">меню третьего уровня</a></li>
-									<li><a href="">меню третьего уровня</a></li>
+									<li><a href="product.html">акарициди</a></li>
+									<li><a href="product.html">інсектициди</a></li>
+									<li><a href="product.html">фунгіциди</a></li>
+									<li><a href="product.html">прилипачі</a></li>
+									<li><a href="product.html">регулятори та стимуляториросту</a></li>
 								</ul>
 							</li>
-							<li><a href="">меню второго уровня</a></li>
 						</ul>
 					</li>
-					<li><a href="">Послуги</a></li>
-					<li><a href="">Про нас</a></li>
-					<li><a href="">Контакти</a></li>
+					<li><a href="product.html">Послуги<span class="fa fa-angle-down"></span></a>
+						<ul class="submenu">
+							<li><a href="service.html">Транспортування безводного аміаку</a></li>
+							<li><a href="service.html">Внесення в ґрунт безводного аміаку </a></li>
+						</ul>
+					</li>
+					<li><a href="about.html">Про нас</a></li>
+					<li><a href="contacts.html">Контакти</a></li>
 				</ul>
 				<div>
-					<a href="" class="btn">Замовити дзвінок</a>
+					<a href="" data-toggle="modal" data-target="#feed_beack" class="btn">Замовити дзвінок</a>
 				</div>
 			</nav>
 		</div>
@@ -127,8 +135,8 @@
 		</nav>
 	
 	</div>
-	<div class="p-relative">
-		<div class="logo-menu d-lg-none">
+	<div class="p-relative fon_top_contacts d-lg-none">
+		<div class="logo-menu ">
 			<img class="b-lazy" src="assets/i/loading.gif" data-src="assets/i/logo.png" alt="logo">
 		</div>
 		<div class="d-lg-none phone-mobile"><i class="icon--5"></i></div>
@@ -401,7 +409,7 @@
 					</ul>
 				</div>
 				<div>
-					<a href="" class="btn">Замовити дзвінок</a>
+					<a href="" data-toggle="modal" data-target="#feed_beack" class="btn">Замовити дзвінок</a>
 				</div>
 			</div>
 			<div class="copirate">
@@ -421,6 +429,49 @@
 			</div>
 		</div>
 	</footer>
+	
+	<div class="modal fade" id="feed_beack" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<h5 class="modal-title text-center" id="exampleModalLabel"></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body p-0">
+	
+					<div class="row">
+						<div class="col-lg-6 d-flex flex-column justify-content-center">
+							<div class="d-block mb-5 mb-lg-0">
+								<h5 class="text-center">Замовити зворотній зв'язок</h5>
+							</div>
+							<form action="">
+								<div class="box_feedbeack p-4 text-center">
+									<div class="form-group">
+										<input type="text" class="form-control" id="uname" placeholder="Ваше ім'я" name="uname" required>
+										<div class="valid-feedback">Valid.</div>
+										<div class="invalid-feedback">Please fill out this field.</div>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="pwd" placeholder="Ваш телефон" name="pswd" required>
+										<div class="valid-feedback">Valid.</div>
+										<div class="invalid-feedback">Please fill out this field.</div>
+									</div>
+									<small>Натиснувши кнопку Ви погоджуєтеся на обробку персональних даних</small>
+									<div class="w100"></div>
+									<a href="" class="btn btn-lg">Надіслати</a>
+								</div>
+							</form>
+						</div>
+						<div class="col-lg-6 text-right d-none d-lg-block">
+							<img class="b-lazy" src="assets/i/loading.gif" data-src="assets/i/modal-01.png" alt="modal-01">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!--JS-->
 	<script src="assets/js/main.min.js"></script>
