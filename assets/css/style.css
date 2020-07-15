@@ -11210,7 +11210,7 @@ header .p-absolute {
 }
 
 .main-map .p-absolute {
-    z-index: 88888;
+    z-index: 888;
 }
 
 .main-map .box_feedbeack {
@@ -11221,7 +11221,7 @@ header .p-absolute {
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
     top: 12%;
     margin-top: -180px;
-    z-index: 88888;
+    z-index: 11;
 }
 
 .main-map .box_feedbeack h4 {
@@ -11326,6 +11326,10 @@ footer .copirate .social i {
     border: 1px solid #dee2e6;
 }
 
+.p-relative {
+    position: relative;
+}
+
 .photoslider .box {
     overflow: hidden;
 }
@@ -11346,6 +11350,12 @@ footer .copirate .social i {
 .item img {
     max-width: 300px;
     margin: 0 auto !important;
+}
+
+.item .order {
+    position: absolute;
+    right: 15px;
+    top: 0px;
 }
 
 .comments_box {
@@ -11396,4 +11406,8 @@ ul.oglavl span.page {
     right: 0;
     padding-left: 2px;
   /* Необязателен. Задается чтобы точки не подходили вплотную к номерам страниц */
+}
+
+.modal-img {
+    max-height: 250px;
 }
