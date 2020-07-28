@@ -11338,6 +11338,11 @@ footer .copirate .social i {
     margin-right: 10px;
 }
 
+.about_text {
+    display: block;
+    overflow: hidden;
+}
+
 .about_text img {
     width: 40vw;
     float: left;
